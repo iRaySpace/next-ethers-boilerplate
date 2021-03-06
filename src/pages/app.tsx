@@ -20,8 +20,8 @@ export default function App() {
         <header className="flex items-center bg-white py-5 px-7">
           <div className="w-1/2"></div>
           <div className="w-1/2 flex justify-end">
-            <button className="border border-red-400 rounded-xl text-red-400 p-3 hover:bg-red-400 hover:text-white transition">
-              Logout
+            <button className="bg-blue-400 rounded-xl text-white px-7 py-3 shadow-md hover:bg-blue-500 transition">
+              Connect
             </button>
           </div>
         </header>
