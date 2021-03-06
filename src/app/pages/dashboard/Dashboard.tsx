@@ -1,4 +1,4 @@
-export default function App() {
+export default function Dashboard() {
   return (
     <div className="flex bg-gray-100">
       <aside className="h-screen w-64 shadow-xl bg-gradient-to-br from-red-400 to-pink-500">
