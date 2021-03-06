@@ -1,4 +1,7 @@
+import { useController } from './controller'
+
 export default function Dashboard() {
+  const { balance } = useController()
   return (
     <div className="flex bg-gray-100">
       <aside className="h-screen w-64 shadow-xl bg-gradient-to-br from-red-400 to-pink-500">
@@ -25,6 +28,24 @@ export default function Dashboard() {
             </button>
           </div>
         </header>
+        <main>
+          <div className="max-w-screen-lg mx-auto mt-20">
+            <div className="bg-white rounded-md py-5 px-9">
+              <header className="mb-6">
+                <h1 className="font-bold">Portfolio Overview</h1>
+                <p className="text-gray-600">Lorem ipsum</p>
+              </header>
+              <div>
+                <div>
+                  ETH{' '}
+                  <span className="text-2xl font-semibold text-gray-600">
+                    {balance}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
       </div>
     </div>
   )
